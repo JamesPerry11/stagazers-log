@@ -1,10 +1,8 @@
-fetch("events.json")
-  .then((response) => response.json())
-  .then((events) => {
-    const list = document.querySelector("#starred");
-    events.forEach((event) => {
-      const item = document.createElement("li");
-      item.textContent = `${event.name} — starred ${event.starred}`;
-      list.appendChild(item);
-    });
-  });
+```javascript
+const button = document.getElementById("myButton");
+const output = document.getElementById("output");
+
+button.addEventListener("click", function () {
+    output.textContent = "You just ran some JavaScript!";
+});
+```
